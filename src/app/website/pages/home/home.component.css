@@ -1,0 +1,114 @@
+.cards-container{
+  padding: 22px 16px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  row-gap:20px;
+}
+
+
+.card{
+  padding: 31px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 17px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  min-height: 236px;
+  min-width: 244px;
+  transition: background-color 0.25s linear;
+  background-color: #FFF;
+}
+
+.card--identity{
+  background-color: #FFF;
+}
+
+.identity__data{
+  display: grid;
+  grid-template-columns: 29px 1fr; /* dos columnas */
+  grid-template-rows: 1fr 1fr; /* Dos filas de altura igual */
+  width: 200px;
+  align-items: center;
+  column-gap: 12px;
+}
+.identity__data img{
+  height: 29px;
+  width: 29px;
+  grid-row: span 2;
+}
+.identity__data h1{
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+.identity__data p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  align-self: flex-end;
+  width: fit-content;
+}
+
+.identity__motto{
+  font-family: 'Anton', sans-serif;
+  /* font-size: 26.6px; */ /*ESTE ES EL ORIGINAL!!!!!!!!!!!*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.5px;
+  /* margin-top: clamp(10px, 6.5vw, 110px); */
+  margin-top: 8%;
+  max-width: 457px;
+  height: 100%;
+}
+
+.card hr{
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  margin: 0;
+  border: 0;
+  margin-top: 8px;
+}
+.identity__ubication{
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: min-content;
+}
+
+
+
+
+@media screen and (min-width: 994px) {
+  .cards-container{
+    min-height: 650px;
+    height: calc(100vh - 44px);
+    /* height: max-content; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* dos columnas */
+    grid-template-rows: 1fr, 1fr; /* Dos filas de altura igual */
+    column-gap: 20px;
+  }
+  .card{
+    flex-grow: 1;
+    min-height: 253px ;
+  }
+  app-card-component:nth-child(4){
+    grid-column: 3;
+    grid-row: 2;
+    /* display: none; */
+  }
+    app-card-component:nth-child(6){
+    grid-column: 1;
+    grid-row: 2;
+    /* display: none; */
+  }
+
+}

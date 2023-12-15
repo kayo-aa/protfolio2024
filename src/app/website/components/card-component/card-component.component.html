@@ -1,0 +1,30 @@
+<a>
+  <div *ngIf="!hide" class="container" >
+    <div class="img-container" [@fadeIn]>
+      <img [src]="card?.image" alt="" />
+    </div>
+
+    <div
+      [@fadeInOut]="'in'"
+      *ngIf="isHovered; else noHover"
+      class="text-container"
+    >
+      <div class="text-container__hovered">
+        <h3>{{ card?.title }}</h3>
+        <h2>{{ card?.description }}</h2>
+      </div>
+      <div class="void-div"></div>
+      <hr />
+      <p id="description">View</p>
+    </div>
+    <ng-template #noHover>
+      <div class="text-container" [@fadeIn]>
+        <h2 id="title">
+          {{ card?.title }}
+        </h2>
+        <hr />
+        <p id="description">{{ card?.description }}</p>
+      </div>
+    </ng-template>
+  </div>
+</a>

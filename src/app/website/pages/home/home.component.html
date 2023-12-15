@@ -1,0 +1,38 @@
+<section class="cards-container">
+  <div [@fade]="cardSelected()" class="card card--identity">
+    <div class="identity__data">
+      <img src="assets/img/icons8-angularjs.svg" alt="" />
+      <h1>Kayo Arce Alcaraz</h1>
+      <p>Frontend Developer</p>
+    </div>
+    <div class="identity__motto">
+      <p>
+        Bringing designs to reality through clean, creative and responsive
+        fronted development.
+      </p>
+    </div>
+    <hr />
+    <div class="identity__ubication">
+      <p>Buenos Aires, Argentina frontend developer</p>
+    </div>
+  </div>
+  <app-card-component
+  [hide]="hide"
+  (mouseenter)="toggleHover(i)"
+  (mouseleave)="toggleHover(i)"
+  (click)="onCardClick(i)"
+  *ngFor="let card of cards; let i = index"
+  class="card"
+  [card]="card"
+  [test]="test"
+  [isHovered]="isHoveredArray[i]"
+  [ngStyle]="
+      isHoveredArray[i]
+      ? { 'background-color': card.hoverColor }
+      : { 'background-color': card.color }
+      "
+    [@fade]="{ value: cardSelected(i), params: { transformation: transformation } }"
+    (@fade.done)="onAnimationDone($event, i)"
+    [selectedCardName]="selectedCardName"
+  ></app-card-component>
+</section>

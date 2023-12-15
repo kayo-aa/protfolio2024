@@ -1,0 +1,89 @@
+a {
+  display: contents;
+  color: #fff;
+}
+.container {
+  height: 100%;
+    width: 100%;
+  /* background-color: #FFF; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 80.5%;
+}
+
+.img-container img {
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.void-div {
+  height: 19.54px;
+}
+
+.text-container__hovered {
+  position: absolute;
+  bottom: 13%;
+  background-color: #00000005;
+  max-width: 80%;
+}
+
+
+
+.text-container__hovered h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.text-container__hovered h2 {
+  width: 80%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+hr {
+  width: 100%;
+  min-height: 1px;
+  max-height: 1px;
+  /* align-self: center; */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 17px;
+  margin: 0;
+  border: 0;
+  margin-top: 8px;
+  /* flex-grow: 1; */
+}
+
+#title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  /* flex-grow: 1; */
+}
+
+#description {
+  margin-top: 12px;
+  /* height: 32px; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 900px) {
+  /* #description{
+    max-width: 200px;
+  } */
+}
