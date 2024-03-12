@@ -44,7 +44,6 @@ export class HomeComponent implements OnInit {
   selectedCardName: string = ''
   transformation: string = '';
   hide: boolean = false;
-  test = 0;
 
   constructor(private cardsService: CardsService) {}
 

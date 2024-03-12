@@ -1,0 +1,204 @@
+<header>
+  <div class="table">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="header-content">
+      <div
+        class="identity__data"
+        id="identity-button"
+        [ngClass]="{ 'identity-hover': headerButtons['identity-button'] }"
+        (mouseleave)="toggleHoverState('identity-button', $event)"
+      >
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('talk-button', $event)"
+          [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+        ></div>
+        <a routerLink="/home">
+          <img src="assets/img/angularWhiteIcon.svg" alt="" />
+          <h3>Kayo Arce Alcaraz</h3>
+          <p>Frontend Developer</p>
+        </a>
+      </div>
+      <div class="header-navigation">
+        <ul>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('home-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/home"
+              id="home-button"
+              [ngClass]="{ 'navigation-hover': headerButtons['home-button'] }"
+              (mouseleave)="toggleHoverState('home-button', $event)"
+            >
+              <i class="fa-solid fa-square-caret-left"></i>
+              <h4>Home</h4>
+            </a>
+          </li>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('about-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/info/about"
+              id="about-button"
+              [ngStyle]="{
+                'background-color': isActive('/info/about') ? '#FFF' : ''
+              }"
+              [ngClass]="{ 'navigation-hover': headerButtons['about-button'] }"
+              (mouseleave)="toggleHoverState('about-button', $event)"
+            >
+              <i
+                class="fa fa-code"
+                aria-hidden="true"
+                [ngStyle]="{
+                  color: isActive('/info/about') ? cardColor : ''
+                }"
+              ></i>
+              <h4
+                [ngStyle]="{
+                  color: isActive('/info/about') ? cardColor : ''
+                }"
+              >
+                About
+              </h4>
+            </a>
+          </li>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('portfolio-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/info/portfolio"
+              id="portfolio-button"
+              [ngStyle]="{
+                'background-color': isActive('/info/portfolio') ? '#FFF' : ''
+              }"
+              [ngClass]="{ 'navigation-hover': headerButtons['portfolio-button'] }"
+              (mouseleave)="toggleHoverState('portfolio-button', $event)"
+            >
+              <i
+                class="fa fa-briefcase"
+                aria-hidden="true"
+                [ngStyle]="{
+                  color: isActive('/info/portfolio') ? cardColor : ''
+                }"
+              ></i>
+              <h4
+                [ngStyle]="{
+                  color: isActive('/info/portfolio') ? cardColor : ''
+                }"
+              >
+                Portfolio
+              </h4>
+            </a>
+          </li>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('clients-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/info/clients"
+              id="clients-button"
+              [ngStyle]="{
+                'background-color': isActive('/info/clients') ? '#FFF' : ''
+              }"
+              [ngClass]="{ 'navigation-hover': headerButtons['clients-button'] }"
+              (mouseleave)="toggleHoverState('clients-button', $event)"
+            >
+              <i
+                class="fa-solid fa-users"
+                [ngStyle]="{
+                  color: isActive('/info/clients') ? cardColor : ''
+                }"
+              ></i>
+              <h4
+                [ngStyle]="{
+                  color: isActive('/info/clients') ? cardColor : ''
+                }"
+              >
+                Clients
+              </h4>
+            </a>
+          </li>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('contact-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/info/contact"
+              id="contact-button"
+              [ngStyle]="{
+                'background-color': isActive('/info/contact') ? '#FFF' : ''
+              }"
+              [ngClass]="{ 'navigation-hover': headerButtons['contact-button'] }"
+              (mouseleave)="toggleHoverState('contact-button', $event)"
+            >
+              <i
+                class="fa-solid fa-arrow-right-arrow-left fa-rotate-by"
+                style="--fa-rotate-angle: 45deg"
+                [ngStyle]="{
+                  color: isActive('/info/contact') ? cardColor : ''
+                }"
+              ></i>
+              <h4
+                [ngStyle]="{
+                  color: isActive('/info/contact') ? cardColor : ''
+                }"
+              >
+                Contact
+              </h4>
+            </a>
+          </li>
+          <li>
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('sup-button', $event)"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
+            <a
+              routerLink="/info/sup"
+              id="sup-button"
+              [ngStyle]="{
+                'background-color': isActive('/info/sup') ? '#FFF' : ''
+              }"
+              [ngClass]="{ 'navigation-hover': headerButtons['sup-button'] }"
+              (mouseleave)="toggleHoverState('sup-button', $event)"
+            >
+              <i
+                class="fa-solid fa-laptop"
+                [ngStyle]="{
+                  color: isActive('/info/sup') ? cardColor : ''
+                }"
+              ></i>
+              <h4
+                [ngStyle]="{
+                  color: isActive('/info/sup') ? cardColor : ''
+                }"
+              >
+                'Sup
+              </h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

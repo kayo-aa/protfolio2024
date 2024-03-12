@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NotFoundComponent } from './not-found/not-found.component';
+
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   pathMatch: 'full',
+  //   redirectTo: 'home'
+  // },
   {
     path: '',
     loadChildren: () =>
       import('./website/website.module').then((m) => m.WebsiteModule),
   },
-  // { path:'**', component: NotFoundComponent }
+  {
+    path: '**',
+    loadComponent: () => import('./not-found/not-found.component').then(c => c.NotFoundComponent)
+  }
 ];
 
 @NgModule({

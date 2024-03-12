@@ -1,0 +1,26 @@
+<div class="page-border__main">
+  <div class="page-border__2"></div>
+</div>
+<div class="container" [style.background-color]="cardColor">
+  <app-header [cardColor]="cardColor"></app-header>
+  <router-outlet  ></router-outlet>
+    <app-footer [cardColor]="cardColor" ></app-footer>
+  <!-- <app-footer (mouseenter)="warty()" [cardColor]="cardColor" ></app-footer> -->
+</div>
+<footer class="external-footer">
+  <div class="identity__data">
+    <img src="assets/img/angularBlackIcon.svg" alt="" />
+    <h3>Kayo Arce Alcaraz</h3>
+    <p>Frontend Developer</p>
+  </div>
+  <div class="identity__contact">
+    <div class="contact__mail">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <a>arcedeveloper&#64;gmail.com</a>
+    </div>
+    <div class="contact__linkedin">
+      <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/kayoalcaraz/">in/kayoalcaraz</a>
+    </div>
+  </div>
+</footer>

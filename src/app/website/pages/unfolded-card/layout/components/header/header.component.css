@@ -1,0 +1,139 @@
+.table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 86px;
+}
+
+.column {
+  border-right: 2px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.07);
+}
+
+.header-content {
+  height: 86px;
+  width: calc(100% - 150px);
+  padding: 0px 45px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.identity__data {
+  position: relative;
+  display: grid;
+  grid-template-columns: 29px 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 12px;
+  height: fit-content;
+  align-self: center;
+}
+
+.hover-activator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  /* background-color: yellowgreen; */
+  border-radius: 20px;
+}
+
+.identity__data a {
+  display: contents;
+  color: rgba(255, 255, 255);
+}
+
+.identity-hover{
+  transition: opacity 0.2s;
+  opacity: 0.5;
+  z-index: 2!important;
+  cursor: pointer;
+}
+
+.identity__data a img {
+  height: 29px;
+  width: 29px;
+  grid-row: span 2;
+}
+
+.identity__data a h3 {
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.8px;
+}
+.identity__data a p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  align-self: flex-end;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+.identity__contact {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.header-navigation {
+  height: 100%;
+}
+
+.header-navigation ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  height: 100%;
+}
+
+.header-navigation ul li {
+  list-style: none;
+  margin-left: 10px;
+  height: 66px;
+  width: 66px;
+  align-self: center;
+  position: relative;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 7px;
+  padding: 0px 10px 4px;
+  color: #fff;
+}
+
+.navigation-hover{
+  transition: background-color 0.2s;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.2s;
+  border-radius: 7px;
+  z-index: 20!important;
+  cursor: pointer!important;
+}
+
+.header-navigation i {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  height: min-content;
+  width: min-content;
+  margin-bottom: 4px;
+  margin-right: 0px;
+}
+
+.header-navigation h4 {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 23px;
+}

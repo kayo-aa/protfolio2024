@@ -19,6 +19,7 @@
   min-width: 244px;
   transition: background-color 0.25s linear;
   background-color: #FFF;
+  cursor: pointer;
 }
 
 .card--identity{
