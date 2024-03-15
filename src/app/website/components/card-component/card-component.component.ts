@@ -45,7 +45,6 @@ export class CardComponentComponent {
   @Input() card: Card | null = null;
   @Input() isHovered: boolean = false;
   @Input() selectedCardName: string = ''
-  @Input() test = 0
 
   constructor(private router: Router){
 
@@ -53,7 +52,15 @@ export class CardComponentComponent {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['selectedCardName'] && changes['selectedCardName'].currentValue != '') {
-      this.router.navigate([changes['selectedCardName'].currentValue.toLowerCase()])
+      let endpoint = this.getRoute(changes['selectedCardName'].currentValue)
+      this.router.navigate([endpoint.toLowerCase()]) 
     }
+  }
+
+  getRoute(title: string): string{
+    if (title != "What's up")
+      return `/info/${title}`
+    else
+      return `/info/sup`
   }
 }

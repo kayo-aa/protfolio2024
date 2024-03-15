@@ -1,0 +1,155 @@
+<footer class="internal-footer">
+  <div class="text-content">
+    <p id="secondary-text">On your signal</p>
+    <p id="main-text">Interested in working together?</p>
+    <div class="container">
+      <div
+        class="hover-activator"
+        (mouseenter)="toggleHoverState('talk-button', $event)"
+        [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+      ></div>
+      <a
+        routerLink="/home"
+        id="talk-button"
+        [ngStyle]="{ color: cardColor }"
+        [ngClass]="{ 'talk-hover': footerButtons['talk-button'] }"
+        (mouseleave)="toggleHoverState('talk-button', $event)"
+        >Let's talk</a
+      >
+    </div>
+  </div>
+  <div class="navigation">
+    <ul>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('home-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/home"
+          id="home-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['home-button'] }"
+          (mouseleave)="toggleHoverState('home-button', $event)"
+          ><i class="fa-solid fa-square-caret-left"></i>
+          <h4>Home</h4></a
+        >
+      </li>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('about-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/about"
+          id="about-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['about-button'] }"
+          (mouseleave)="toggleHoverState('about-button', $event)"
+          [ngStyle]="{
+            'background-color': isActive('/info/about') ? '#FFF' : '',
+            color: isActive('/info/about') ? cardColor : ''
+          }"
+        >
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <h4>About</h4>
+        </a>
+      </li>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('portfolio-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/portfolio"
+          id="portfolio-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['portfolio-button'] }"
+          (mouseleave)="toggleHoverState('portfolio-button', $event)"
+          [ngStyle]="{
+            'background-color': isActive('/info/portfolio') ? '#FFF' : '',
+            color: isActive('/info/portfolio') ? cardColor : ''
+          }"
+        >
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
+          <h4>Portfolio</h4>
+        </a>
+      </li>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('clients-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/clients"
+          id="clients-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['clients-button'] }"
+          (mouseleave)="toggleHoverState('clients-button', $event)"
+          [ngStyle]="{
+            'background-color': isActive('/info/clients') ? '#FFF' : '',
+            color: isActive('/info/clients') ? cardColor : ''
+          }"
+        >
+          <i class="fa-solid fa-users"></i>
+          <h4>Clients</h4>
+        </a>
+      </li>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('contact-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/contact"
+          id="contact-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['contact-button'] }"
+          (mouseleave)="toggleHoverState('contact-button', $event)"
+          [ngStyle]="{
+            'background-color': isActive('/info/contact') ? '#FFF' : '',
+            color: isActive('/info/contact') ? cardColor : ''
+          }"
+        >
+          <i
+            class="fa-solid fa-arrow-right-arrow-left fa-rotate-by"
+            style="--fa-rotate-angle: 45deg"
+          ></i>
+          <h4>Contact</h4>
+        </a>
+      </li>
+      <li>
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('sup-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag ? 'none!important' : 'inline!important'
+          }"
+        ></div>
+        <a
+          routerLink="/sup"
+          id="sup-button"
+          [ngClass]="{ 'navigation-hover': footerButtons['sup-button'] }"
+          (mouseleave)="toggleHoverState('sup-button', $event)"
+          [ngStyle]="{
+            'background-color': isActive('/info/sup') ? '#FFF' : '',
+            color: isActive('/info/sup') ? cardColor : ''
+          }"
+        >
+          <i class="fa-solid fa-laptop"></i>
+          <h4>'Sup</h4>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>

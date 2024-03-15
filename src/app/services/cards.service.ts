@@ -22,7 +22,7 @@ export class CardsService {
     },
     {
       title: `What's up`,
-      description: 'content1',
+      description: 'phrase',
       image: 'assets/img/sup-main.png',
       color: '#384D48',
       hoverColor: '#2f403c',
@@ -36,7 +36,7 @@ export class CardsService {
     },
     {
       title: 'Clients',
-      description: 'aa',
+      description: 'phrase',
       image: 'assets/img/clients-main.png',
       color: '#3C8F7B',
       hoverColor: 'rgb(51, 120, 103)',
@@ -52,5 +52,12 @@ export class CardsService {
     return this.cardConfigurations;
   }
 
-  
+  getCardByTitle(title: string): Card | null{
+    for (const card of this.cardConfigurations) {
+      if (card.title.toLocaleLowerCase() === title.toLocaleLowerCase()) {
+        return card;
+      }
+    }
+    return null
+  }
 }

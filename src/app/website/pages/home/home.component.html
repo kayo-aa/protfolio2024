@@ -1,7 +1,7 @@
 <section class="cards-container">
   <div [@fade]="cardSelected()" class="card card--identity">
     <div class="identity__data">
-      <img src="assets/img/icons8-angularjs.svg" alt="" />
+      <img src="assets/img/angularBlackIcon.svg" alt="" />
       <h1>Kayo Arce Alcaraz</h1>
       <p>Frontend Developer</p>
     </div>
@@ -21,11 +21,11 @@
   (mouseenter)="toggleHover(i)"
   (mouseleave)="toggleHover(i)"
   (click)="onCardClick(i)"
-  *ngFor="let card of cards; let i = index"
   class="card"
+  *ngFor="let card of cards; let i = index"
   [card]="card"
-  [test]="test"
   [isHovered]="isHoveredArray[i]"
+  [selectedCardName]="selectedCardName"
   [ngStyle]="
       isHoveredArray[i]
       ? { 'background-color': card.hoverColor }
@@ -33,6 +33,5 @@
       "
     [@fade]="{ value: cardSelected(i), params: { transformation: transformation } }"
     (@fade.done)="onAnimationDone($event, i)"
-    [selectedCardName]="selectedCardName"
   ></app-card-component>
 </section>
