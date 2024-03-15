@@ -1,9 +1,37 @@
-import { Component, Input } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
-import { Card } from 'src/app/models/card.model';
 import { CardsService } from 'src/app/services/cards.service';
 
 @Component({
+  animations: [
+    trigger('fadeInOut', [
+      state(
+        'in',
+        style({
+          opacity: 1,
+        })
+      ),
+      transition('void => *', [
+        style({
+          opacity: 0,
+        }),
+        animate(400),
+      ]),
+    ]),
+    trigger('fadeIn', [
+      state(
+        'void',
+        style({
+          opacity: 0,
+        })
+      ),
+      transition('void => *', [
+        animate('400ms ease-in-out', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
+
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css'],
@@ -26,10 +54,6 @@ export class LayoutComponent {
       this.cardColor =  this.cardsService.getCardByTitle(this.title)?.color;
   }
 
-  warty(): void{
-    this.a = !this.a
-    console.log(this.a);
-  }
 
 }
 

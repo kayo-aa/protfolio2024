@@ -24,6 +24,7 @@
 
 .card--identity{
   background-color: #FFF;
+  cursor: auto!important;
 }
 
 .identity__data{

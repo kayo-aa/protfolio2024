@@ -16,9 +16,7 @@ import {
   styleUrls: ['./home.component.css'],
   animations: [
     trigger('fade', [
-      state(
-        'null',style({})
-      ),
+      state('null', style({})),
       state(
         'selected',
         style({
@@ -35,13 +33,13 @@ import {
       transition('null => notSelected', animate('200ms')),
       transition('null => selected', animate('400ms 500ms ease')),
     ]),
-    ],
+  ],
 })
 export class HomeComponent implements OnInit {
   cards: Card[] = [];
   isHoveredArray: boolean[] = [];
   selectedCardIndex: number | null = null;
-  selectedCardName: string = ''
+  selectedCardName: string = '';
   transformation: string = '';
   hide: boolean = false;
 
@@ -56,33 +54,60 @@ export class HomeComponent implements OnInit {
   }
 
   onCardClick(index: number): void {
-    this.selectedCardIndex = index;
-    this.hide = !this.hide;
+    if (window.innerWidth > 993) {
+      this.selectedCardIndex = index;
+      this.hide = !this.hide;
+    } else {
+      this.selectedCardIndex = index;
+    }
   }
 
   setTransform(index?: number): string {
-    switch (index) {
-      case 0:
-        return 'translate(0%, 58.5%) scale3d(3.08, 2.6, 1)';
-        break;
+    if (window.innerWidth > 993) {
+      switch (index) {
+        case 0:
+          return 'translate(0%, 58.5%) scale3d(3.08, 2.6, 1)';
+          break;
         case 1:
           return 'translate(-104%, 58.5%) scale3d(3.08, 2.6, 1)';
           break;
-          case 2:
-            return `translate(-104%, -50%) scale3d(3.08, 2.6, 1)`;
-            break;
-      case 3:
-        return 'translate(0%, -50%) scale3d(3.08, 2.6, 1)'
-        break;
+        case 2:
+          return `translate(-104%, -50%) scale3d(3.08, 2.6, 1)`;
+          break;
+        case 3:
+          return 'translate(0%, -50%) scale3d(3.08, 2.6, 1)';
+          break;
         case 4:
-        return `translate(104%, -50%) scale3d(3.08, 2.6, 1)`;
-        break;
+          return `translate(104%, -50%) scale3d(3.08, 2.6, 1)`;
+          break;
         default:
           return '';
           break;
-        }
+      }
+    } else {
+      switch (index) {
+        case 0:
+          return '';
+          break;
+        case 1:
+          return '';
+          break;
+        case 2:
+          return '';
+          break;
+        case 3:
+          return '';
+          break;
+        case 4:
+          return '';
+          break;
+        default:
+          return '';
+          break;
+      }
+    }
   }
-  
+
   cardSelected(index?: number): string {
     if (this.selectedCardIndex !== null) {
       this.transformation = this.setTransform(index);
@@ -93,9 +118,8 @@ export class HomeComponent implements OnInit {
   }
 
   onAnimationDone(event: AnimationEvent, index: number): void {
-    if(event.toState === 'selected'){
-      this.selectedCardName = this.cards[index].title
+    if (event.toState === 'selected') {
+      this.selectedCardName = this.cards[index].title;
     }
-    
   }
 }

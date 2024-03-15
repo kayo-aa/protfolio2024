@@ -1,4 +1,4 @@
-.internal-footer{
+.internal-footer {
   height: 540px;
   display: flex;
   padding: 0px 115px;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.internal-footer .text-content{
+.internal-footer .text-content {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -15,14 +15,14 @@
   margin-right: 58px;
 }
 
-.text-content #secondary-text{
+.text-content #secondary-text {
   margin-bottom: 12px;
   font-size: 21px;
   font-weight: 700;
   line-height: 28px;
 }
 
-.text-content #main-text{
+.text-content #main-text {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 31px;
@@ -32,7 +32,7 @@
   font-weight: 400;
 }
 
-.text-content .container{
+.text-content .container {
   width: 175px;
   height: 53px;
   display: flex;
@@ -50,13 +50,14 @@
   border-radius: 20px;
 }
 
-.talk-hover{
+.talk-hover {
   transform: translate(0, -6px);
   box-shadow: 0 22px 22px -20px rgba(0, 0, 0, .25);
-  z-index: 2!important;
+  z-index: 2 !important;
   cursor: pointer;
 }
-.text-content a{
+
+.text-content a {
   width: 100%;
   cursor: pointer;
   text-align: center;
@@ -72,32 +73,33 @@
 }
 
 
-.internal-footer .navigation{
+.internal-footer .navigation {
   display: flex;
   max-width: 395px;
 }
 
-ul, li{
+ul,
+li {
   padding: 0px;
   margin: 0px;
   width: 100%;
   list-style: none;
 }
 
-.navigation ul{
+.navigation ul {
   display: flex;
   height: 252px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.navigation li{
+.navigation li {
   height: 120px;
   width: 120px;
   position: relative;
 }
 
-.navigation li a{
+.navigation li a {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -111,12 +113,12 @@ ul, li{
   z-index: 0;
 }
 
-.navigation-hover{
+.navigation-hover {
   background-color: rgba(255, 255, 255, 0.05);
   transition: background-color 0.2s;
   border-radius: 7px;
-  z-index: 20!important;
-  cursor: pointer!important;
+  z-index: 20 !important;
+  cursor: pointer !important;
 }
 
 .navigation i {
@@ -132,3 +134,35 @@ ul, li{
   line-height: 23px;
 }
 
+@media screen and (max-width: 908px) {
+  .internal-footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: fit-content;
+    /* padding-bottom: 130px; */
+  }
+
+  .internal-footer .text-content {
+    width: auto;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .text-content #secondary-text {
+    font-size: 17px;
+  }
+
+  .text-content #main-text {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .navigation ul {
+    height: fit-content;
+  }
+}

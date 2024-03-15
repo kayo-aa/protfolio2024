@@ -4,9 +4,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent{
+export class FooterComponent {
   @Input() cardColor: string | undefined = '';
   hoverFlag: boolean = false;
   footerButtons: any = {
@@ -17,19 +17,16 @@ export class FooterComponent{
     'clients-button': false,
     'contact-button': false,
     'sup-button': false,
-  }
+  };
 
-  constructor( private router: Router){
-
-  }
+  constructor(private router: Router) {}
 
   isActive(route: string): boolean {
-    return this.router.isActive(route, true)
+    return this.router.isActive(route, true);
   }
 
-  toggleHoverState(id:string, event: MouseEvent): void{
-    this.hoverFlag = !this.hoverFlag
-    this.footerButtons[id] = !this.footerButtons[id]
+  toggleHoverState(id: string, event: MouseEvent): void {
+    this.hoverFlag = !this.hoverFlag;
+    this.footerButtons[id] = !this.footerButtons[id];
   }
-
 }

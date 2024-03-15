@@ -52,7 +52,15 @@ export class CardComponentComponent {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['selectedCardName'] && changes['selectedCardName'].currentValue != '') {
-      this.router.navigate(['info/' + changes['selectedCardName'].currentValue.toLowerCase()]) 
+      let endpoint = this.getRoute(changes['selectedCardName'].currentValue)
+      this.router.navigate([endpoint.toLowerCase()]) 
     }
+  }
+
+  getRoute(title: string): string{
+    if (title != "What's up")
+      return `/info/${title}`
+    else
+      return `/info/sup`
   }
 }

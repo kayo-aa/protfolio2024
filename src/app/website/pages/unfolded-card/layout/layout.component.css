@@ -31,14 +31,11 @@
 }
 
 .external-footer{
-  margin: 0 auto;
-  padding-bottom: 31px;
+  margin: 24px 30px 30px;
   width: calc(100vw - 60px);
   display: flex;
   border: none;
   font-family: 'Inter', sans-serif;
-
-  /* justify-content: space-between; */
 }
 
 .identity__data{
@@ -48,6 +45,7 @@
   column-gap: 12px;
   height: fit-content;
   align-self: center;
+  z-index: 30;
   /* margin-left: 24px; */
 }
 .identity__data img{
@@ -97,7 +95,7 @@ i{
   margin-right: 8px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 710px) {
   .identity__contact{
     display: none;
   }

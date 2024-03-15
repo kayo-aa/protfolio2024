@@ -87,7 +87,9 @@
               [ngStyle]="{
                 'background-color': isActive('/info/portfolio') ? '#FFF' : ''
               }"
-              [ngClass]="{ 'navigation-hover': headerButtons['portfolio-button'] }"
+              [ngClass]="{
+                'navigation-hover': headerButtons['portfolio-button']
+              }"
               (mouseleave)="toggleHoverState('portfolio-button', $event)"
             >
               <i
@@ -118,7 +120,9 @@
               [ngStyle]="{
                 'background-color': isActive('/info/clients') ? '#FFF' : ''
               }"
-              [ngClass]="{ 'navigation-hover': headerButtons['clients-button'] }"
+              [ngClass]="{
+                'navigation-hover': headerButtons['clients-button']
+              }"
               (mouseleave)="toggleHoverState('clients-button', $event)"
             >
               <i
@@ -148,7 +152,9 @@
               [ngStyle]="{
                 'background-color': isActive('/info/contact') ? '#FFF' : ''
               }"
-              [ngClass]="{ 'navigation-hover': headerButtons['contact-button'] }"
+              [ngClass]="{
+                'navigation-hover': headerButtons['contact-button']
+              }"
               (mouseleave)="toggleHoverState('contact-button', $event)"
             >
               <i
@@ -198,6 +204,37 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="header-dropdwon-menu">
+        <div
+          class="hover-activator"
+          (mouseenter)="toggleHoverState('menu-button', $event)"
+          [ngStyle]="{
+            display: hoverFlag || isMenuClicked ? 'none' : 'inline'
+          }"
+        ></div>
+        <i
+          class="fa-solid fa-bars"
+          id="menu-button"
+          [ngClass]="{ 'identity-hover': headerButtons['menu-button'] }"
+          [ngStyle]="{ display: isMenuClicked ? 'none' : 'inline' }"
+          (mouseleave)="toggleHoverState('menu-button', $event)"
+          (click)="menuOnClick()"
+        ></i>
+        <div *ngIf="isMenuClicked" class="displayed-menu" [@slideInFromLeft]>
+          <a
+            routerLink="/home"
+            [ngStyle]="{ color: '#000', 'background-color': '#FFF' }"
+            >Home</a
+          >
+          <a
+            *ngFor="let card of cards; let i = index"
+            [ngStyle]="{ color: '#FFF', 'background-color': card.color }"
+            [routerLink]="getRoute(card.title)"
+          >
+            {{ card.title }}
+          </a>
+        </div>
       </div>
     </div>
   </div>

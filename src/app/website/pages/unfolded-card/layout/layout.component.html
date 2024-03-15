@@ -2,10 +2,11 @@
   <div class="page-border__2"></div>
 </div>
 <div class="container" [style.background-color]="cardColor">
-  <app-header [cardColor]="cardColor"></app-header>
-  <router-outlet  ></router-outlet>
-    <app-footer [cardColor]="cardColor" ></app-footer>
-  <!-- <app-footer (mouseenter)="warty()" [cardColor]="cardColor" ></app-footer> -->
+  <app-header [@fadeIn] [cardColor]="cardColor"></app-header>
+  <div [@fadeIn]>
+    <router-outlet></router-outlet>
+  </div>
+    <app-footer [@fadeIn] [cardColor]="cardColor" ></app-footer>
 </div>
 <footer class="external-footer">
   <div class="identity__data">
