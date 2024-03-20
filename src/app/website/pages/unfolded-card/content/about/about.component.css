@@ -1,6 +1,67 @@
 .container{
+  flex-grow: 3;
   height: 100%;
-  width: calc(100vw - 60px);
+  display: flex;
+  width: 100%;
 }
 
+.main-text{
+  width: 100% ;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.main-text h1{
+  text-transform: uppercase;
+  font-family: Anton, sans-serif;
+  font-size: 79px;
+  font-weight: 400;
+  line-height: 87px;
+  margin: 0 20%;
+
+}
+
+.main-text p{
+  font-size: 14px;
+  line-height: 26px;
+  margin: 54px 28% 242px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 990px) {
+  .main-text h1{
+    font-size: 49px;
+    line-height: 51px;
+    margin: 0 12%;
+  }
+
+  .main-text p{
+    margin: 32px 18% 347px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-text h1{
+    margin: 0 4px;
+    font-size: 44px;
+  }
+
+  .main-text p{
+    margin: 32px 4% 192px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-text h1{
+    margin: 0 20px;
+  }
+
+  .main-text p{
+    margin: 32px 20px 192px;
+  }
+}
