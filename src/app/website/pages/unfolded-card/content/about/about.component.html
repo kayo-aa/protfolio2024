@@ -1,6 +1,171 @@
 <div class="container">
   <section class="main-text">
     <h1>Crafting Captivating Web Experiences.</h1>
-    <p>i'm Kayo Alcaraz, a front-end developer passionate about crafting web interfaces that are not only visually appealing but also intuitive and user-friendly. I thrive on turning ideas into tangible realities, using clean and reusable code.</p>
+    <p>
+      i'm Kayo Alcaraz, a front-end developer passionate about crafting web
+      interfaces that are not only visually appealing but also intuitive and
+      user-friendly. I thrive on turning ideas into tangible realities, using
+      clean and reusable code.
+    </p>
+  </section>
+  <section class="banner">
+    <ul>
+      <li>
+        <h5>Single Page Application</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Computer Science</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Web Development</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Angular</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Electronics</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Single Page Application</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Computer Science</h5>
+        <span>•</span>
+      </li>
+    </ul>
+  </section>
+  <section class="information">
+    <div class="information-container" id="information-container">
+      <article class="skills-article">
+        <strong>About Me</strong>
+        <ul>
+          <li>
+            <div class="skills-article--icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <p class="skills-article--description">Front-End</p>
+          </li>
+          <li>
+            <div class="skills-article--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="46"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-cpu"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z"
+                />
+                <path d="M9 9h6v6h-6z" />
+                <path d="M3 10h2" />
+                <path d="M3 14h2" />
+                <path d="M10 3v2" />
+                <path d="M14 3v2" />
+                <path d="M21 10h-2" />
+                <path d="M21 14h-2" />
+                <path d="M14 21v-2" />
+                <path d="M10 21v-2" />
+              </svg>
+            </div>
+            <p class="skills-article--description">Electronics</p>
+          </li>
+          <li>
+            <div class="skills-article--icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="46"
+                height="46"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-school"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
+                <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
+              </svg>
+            </div>
+            <p class="skills-article--description">
+              Computer <br />
+              Science
+            </p>
+          </li>
+          <li>
+            <div class="skills-article--icon">
+              <i class="fa-brands fa-angular"></i>
+            </div>
+            <p class="skills-article--description">Angular</p>
+          </li>
+          <li>
+            <div class="skills-article--icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <p class="skills-article--description">
+              Responsive <br />
+              Web Design
+            </p>
+          </li>
+        </ul>
+      </article>
+      <article class="text-article">
+        <div class="text-article--container">
+          <p class="text-article--title">Past, present and future</p>
+          <p class="text-article--body">
+            I am an electronic technician with experience in microcontroller
+            programming. More specifically using C/C++ for the Atmega328P. My
+            interest in programming grew after that training and I decided that
+            I would dedicate myself to it, focusing on web programming. <br />
+            I specialized in Frontend with Angular, a powerful framework powered
+            by Google, and with all the essential t ools of the profession. <br />
+            I am currently studying Computer Science at the University of Buenos
+            Aires. I'm about to enter my second year!
+          </p>
+        </div>
+        <div class="text-article--container">
+          <p class="text-article--title">Hard Skills</p>
+          <p class="text-article--body">
+            I have a good command of the following tools: <br>
+            JavaScript, TypeScript, Angular, HTML, CSS, GIT, VSCode, C/C++ <br><br>
+            And I pay attention to the following web development topics: <br>
+            Accessibility, Responsive Web Design, Pixel Perfect Layout, Performance
+          </p>
+        </div>
+        <div class="text-article--container">
+          <p class="text-article--title">Ready to Make a Difference</p>
+          <p class="text-article--body">
+            From startup projects to large-scale initiatives, I am excited to put my experience and energy to positive impact. <br> My goal is to grow and develop as a frontend developer while contributing to the success of your team and organization and delivering user interfaces that are both visually appealing and easy to navigate.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div
+      class="table"
+      [ngStyle]="{ 'grid-template-rows': informationElementHeight }"
+    >
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
   </section>
 </div>
