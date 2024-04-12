@@ -3,7 +3,7 @@
 </div>
 <div class="container" [style.background-color]="cardColor">
   <app-header [@fadeIn] [cardColor]="cardColor"></app-header>
-  <div [@fadeIn]>
+  <div [@fadeIn] class="section-container" >
     <router-outlet></router-outlet>
   </div>
     <app-footer [@fadeIn] [cardColor]="cardColor" ></app-footer>

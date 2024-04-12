@@ -1,3 +1,6 @@
+header {
+  position: relative;
+}
 .table {
   width: 100%;
   display: grid;
@@ -12,10 +15,11 @@
 }
 
 .header-content {
-  height: 86px;
-  width: calc(100% - 150px);
-  padding: 0px 45px;
   position: absolute;
+  left: 0;
+  right: 0;
+  height: 86px;
+  padding: 0px 45px;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -151,9 +155,7 @@
 
 @media screen and (max-width: 875px) {
   .header-content {
-    width: calc(100vw - 60px);
-    padding: 0;
-    justify-content: space-around;
+    padding: 0 20px;
   }
 
   .header-navigation {
@@ -195,9 +197,13 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .table {
+    margin-bottom: 25%;
+  }
+}
+
 @media screen and (max-width: 420px) {
-
-
   .identity__data {
     column-gap: 8px;
   }
