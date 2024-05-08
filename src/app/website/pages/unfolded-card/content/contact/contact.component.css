@@ -1,0 +1,190 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-text {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-text h1 {
+  text-transform: uppercase;
+  font-family: Anton, sans-serif;
+  font-size: 79px;
+  font-weight: 400;
+  line-height: 87px;
+  margin: 0 20%;
+  z-index: 1;
+}
+
+.main-text p {
+  font-size: 14px;
+  line-height: 26px;
+  margin: 54px 28% 242px;
+  width: fit-content;
+}
+
+.banner {
+  position: relative;
+  width: calc(100vw - 20px);
+  margin-left: -30px;
+}
+
+.banner ul {
+  display: flex;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner ul li {
+  display: flex;
+  align-items: center;
+}
+
+.banner ul li span {
+  margin: 0 28px;
+}
+.information{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.information-container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  margin: 68px 0;
+  display: flex;
+  color: #fff;
+  width: 100%;
+}
+.contact-container{
+  column-gap: 16px;
+  margin: 0 7.5%;
+  display: flex;
+  width: 100%;
+}
+.contact__card{
+  width: 33.3%;
+  border-radius: 17px;
+  padding: 90px 27px 27px;
+  height: calc(200px);
+  z-index: 90;
+}
+.contact__card:hover{
+  background-color: #FFF;
+  color: #000;
+  transition:  0.2s linear;
+
+}
+.contact__card:hover a{
+  transition:  0.2s linear;
+
+  color: #000;
+}
+.contact__card:hover svg{
+  transition:  0.2s linear;
+
+  fill: #000;
+
+}
+.card__content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact__card h4{
+  font-family: Anton, sans-serif;
+  font-size: 2.3em;
+  font-weight: 400;
+  line-height: 43px;
+  margin: 10px 0;
+}
+.contact__card p{
+  line-height: 26px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.contact__card svg{
+  margin-top: auto;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.table{
+  margin-top: 6px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 13%;
+  position: relative;
+}
+
+.column {
+  border-top: 2px solid rgba(255, 255, 255, 0.12) ;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+@media screen and (max-width: 990px) {
+  .main-text h1 {
+    font-size: 49px;
+    line-height: 51px;
+    margin: 0 12%;
+  }
+
+  .main-text p {
+    margin: 32px 18% 242px;
+    line-height: 26px;
+  }
+
+  .contact-container{
+    flex-direction: column;
+    width: 100%;
+    align-items:flex-start;
+  }
+  .contact__card{
+    padding: 35px 0px 35px 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-text h1 {
+    margin: 0 20px;
+    font-size: 44px;
+  }
+
+  .main-text p {
+    margin: 15px 20px 25%;
+  }
+}
