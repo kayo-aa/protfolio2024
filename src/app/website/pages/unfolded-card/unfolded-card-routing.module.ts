@@ -21,6 +21,13 @@ const routes: Routes = [
             (c) => c.PortfolioComponent
           ),
       },
+      {
+        path: 'contact',
+        loadComponent: () =>
+          import('./content/contact/contact.component').then(
+            (c) => c.ContactComponent
+          ),
+      },
     ],
   },
 ];

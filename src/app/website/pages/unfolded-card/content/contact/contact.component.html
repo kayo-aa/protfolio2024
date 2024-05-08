@@ -1,0 +1,109 @@
+<div class="container">
+  <section class="main-text">
+    <h1>Ready to colaborate in your Project.</h1>
+    <p>
+      Great that you're here! Now, let's start a conversation. Do you need help
+      improving the usability, performance or design of your existing app or
+      website? Whatever your project is, I'm ready to collaborate with you!.
+      Whatever your project is, here I show you how you can contact me.
+    </p>
+  </section>
+  <section class="banner">
+    <ul>
+      <li *ngFor="let item of [1, 2, 3, 4]">
+        <h5>arcedeveloper&#64;gmail.com</h5>
+        <span>•</span>
+      </li>
+    </ul>
+  </section>
+  <section class="information">
+    <div class="information-container" id="information-about">
+      <article class="contact">
+        <div class="contact-container">
+          <div class="contact__card">
+            <div class="card__content">
+              <h4>Email</h4>
+              <p>
+                I usually don't take long to respond <br />
+                <a
+                  href="mailto:arcedeveloper@gmail.com"
+                  >arcedeveloper&#64;gmail.com</a
+                >
+                <br />
+              </p>
+              <svg
+              (click)="redirectTo('mailto:arcedeveloper@gmail.com')"
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="38"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="card__content">
+              <h4>LinkedIn</h4>
+              <p>
+                Let's connect and expand our network<br />
+                <a href="https://www.linkedin.com/in/kayoalcaraz/"
+                  >linkedin.com/in/kayoalcaraz/</a
+                >
+              </p>
+              <svg
+              (click)="redirectTo('https://www.linkedin.com/in/kayoalcaraz/')"
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="38"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="card__content">
+              <h4>GitHub</h4>
+              <p>
+                We can't talk, but you can check out all my projects<br />
+                <a href="https://github.com/kayo-aa">github/kayo-aa</a>
+              </p>
+              <svg
+              (click)="redirectTo('https://github.com/kayo-aa')"
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="38"
+                viewBox="0 0 512 512"
+              >
+                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div
+      class="table"
+      [ngStyle]="{ 'grid-template-rows': informationElementHeight }"
+    >
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
+  </section>
+</div>
