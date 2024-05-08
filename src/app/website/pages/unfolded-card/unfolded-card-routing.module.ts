@@ -14,7 +14,13 @@ const routes: Routes = [
             (c) => c.AboutComponent
           ),
       },
-
+      {
+        path: 'portfolio',
+        loadComponent: () =>
+          import('./content/portfolio/portfolio.component').then(
+            (c) => c.PortfolioComponent
+          ),
+      },
     ],
   },
 ];

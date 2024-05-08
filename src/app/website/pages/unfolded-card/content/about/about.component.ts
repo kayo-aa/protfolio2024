@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,14 +8,19 @@ import { CommonModule } from '@angular/common';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements AfterViewInit{
-  informationElementHeight: string = '0px';
-
-  ngAfterViewInit() {
-    const element = document.querySelector('#information-container'); 
+export class AboutComponent implements OnInit{
+  informationElementHeight: string = '0px'
+  
+  ngOnInit() {
+    this.updateInformationElementHeight()
+    console.log(this.informationElementHeight);
+    
+  }
+ 
+  private updateInformationElementHeight() {
+    const element = document.querySelector('#information-about');
     if (element) {
       this.informationElementHeight = `${element.clientHeight}px`;
     }
   }
-  
 }

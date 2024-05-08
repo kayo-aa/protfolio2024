@@ -231,6 +231,7 @@
             *ngFor="let card of cards; let i = index"
             [ngStyle]="{ color: '#FFF', 'background-color': card.color }"
             [routerLink]="getRoute(card.title)"
+            (click) = "isMenuClicked = !isMenuClicked"
           >
             {{ card.title }}
           </a>
