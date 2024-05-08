@@ -13,13 +13,12 @@ export class AboutComponent implements OnInit{
   
   ngOnInit() {
     this.updateInformationElementHeight()
+    console.log(this.informationElementHeight);
     
   }
  
   private updateInformationElementHeight() {
     const element = document.querySelector('#information-about');
-    console.log(element);
-    
     if (element) {
       this.informationElementHeight = `${element.clientHeight}px`;
     }

@@ -11,15 +11,16 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent implements OnInit{
   informationElementHeight: string = '0px';
 
-  
   ngOnInit() {
-    this.updateInformationElementHeight()
+    this.updateInformationElementHeight();
   }
 
   private updateInformationElementHeight() {
     const element = document.querySelector('#information-portfolio');
     if (element) {
-      this.informationElementHeight = `${element.clientHeight}px`;
+      this.informationElementHeight = `${element.clientHeight+365}px`;
+      console.log(this.informationElementHeight);
+      
     }
   }
 }
