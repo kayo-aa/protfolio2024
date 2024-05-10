@@ -37,7 +37,6 @@ import { CardsService } from 'src/app/services/cards.service';
       ]),
     ]),
   ],
-
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css'],

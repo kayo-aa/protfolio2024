@@ -1,0 +1,46 @@
+.main-text {
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  height: calc(100vh - 60px);
+  background-color: #243B42;
+}
+
+.main-text h1 {
+  text-transform: uppercase;
+  font-family: Anton, sans-serif;
+  font-size: 20vh;
+  font-weight: 400;
+}
+
+.main-text p {
+  font-size: 4vh;
+  line-height: 26px;
+  margin-top: 54px;
+  width: fit-content;
+}
+
+.main-text a{
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  color: #243B42;
+  border-radius: 40px;
+  padding: 26px 30px;
+  margin-top: 54px;
+  font-size: 3vh;
+  font-weight: 700;
+  line-height: 26px;
+  transition: box-shadow .2s, transform .2s;
+  text-decoration: none;
+}
+
+.main-text a:hover{
+  transform: translate(0, -6px);
+  box-shadow: 0 22px 22px -20px rgba(0, 0, 0, .25);
+  cursor: pointer;
+}

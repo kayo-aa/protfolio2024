@@ -6,20 +6,18 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent {
-  informationElementHeight: string = '0px'
-  
-  
+  informationElementHeight: string = '0px';
+
   ngOnInit() {
-    this.updateInformationElementHeight()
+    this.updateInformationElementHeight();
     console.log(this.informationElementHeight);
-    
   }
- 
+
   private updateInformationElementHeight() {
-    const element = document.querySelector('#information-about');
+    const element = document.querySelector('#information-contact');
     if (element) {
       this.informationElementHeight = `${element.clientHeight}px`;
     }
