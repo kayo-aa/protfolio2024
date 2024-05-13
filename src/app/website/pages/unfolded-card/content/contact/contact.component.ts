@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   informationElementHeight: string = '0px';
+  hoverFlag: boolean = false;
+  contactCards: any={
+    'email': false,
+    'linkedin': false,
+    'github': false
+  }
 
   ngOnInit() {
     this.updateInformationElementHeight();
@@ -25,5 +31,10 @@ export class ContactComponent {
 
   redirectTo(url: string) {
     window.open(url, '_blank');
+  }
+
+  toggleHoverState(contactCard: string): void {
+    this.hoverFlag = !this.hoverFlag;
+    this.contactCards[contactCard] = !this.contactCards[contactCard];
   }
 }

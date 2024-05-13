@@ -20,7 +20,16 @@
     <div class="information-container" id="information-contact">
       <article class="contact">
         <div class="contact-container">
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            (mouseleave)="toggleHoverState('email')"
+            [ngClass]="{ 'card-hover': contactCards['email'] }"
+          >
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('email')"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
             <div class="card__content">
               <h4>Email</h4>
               <p>
@@ -44,7 +53,16 @@
               </svg>
             </div>
           </div>
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            (mouseleave)="toggleHoverState('linkedin')"
+            [ngClass]="{ 'card-hover': contactCards['linkedin'] }"
+          >
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('linkedin')"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
             <div class="card__content">
               <h4>LinkedIn</h4>
               <p>
@@ -67,7 +85,16 @@
               </svg>
             </div>
           </div>
-          <div class="contact__card">
+          <div
+            class="contact__card"
+            (mouseleave)="toggleHoverState('github')"
+            [ngClass]="{ 'card-hover': contactCards['github'] }"
+          >
+            <div
+              class="hover-activator"
+              (mouseenter)="toggleHoverState('github')"
+              [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+            ></div>
             <div class="card__content">
               <h4>GitHub</h4>
               <p>

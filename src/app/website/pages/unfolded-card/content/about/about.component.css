@@ -177,6 +177,13 @@
   line-height: 26px;
 }
 
+.text-article--body a{
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  z-index: 1;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 990px) {
   .main-text h1{

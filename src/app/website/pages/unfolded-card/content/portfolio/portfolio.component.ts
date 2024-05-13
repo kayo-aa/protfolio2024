@@ -18,6 +18,8 @@ export class PortfolioComponent implements OnInit {
   private updateInformationElementHeight() {
     const element = document.querySelector('#information-portfolio');
     if (element) {
+      console.log(element.clientHeight);
+      
       this.informationElementHeight = `${element.clientHeight + 365}px`;
       console.log(this.informationElementHeight);
     }
