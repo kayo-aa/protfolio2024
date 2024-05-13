@@ -28,6 +28,13 @@ const routes: Routes = [
             (c) => c.ContactComponent
           ),
       },
+      {
+        path: 'sup',
+        loadComponent: () =>
+          import('./content/sup/sup.component').then(
+            (c) => c.SupComponent
+          ),
+      },
     ],
   },
 ];

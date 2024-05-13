@@ -62,6 +62,9 @@ export class LayoutComponent implements OnInit {
 
     if (this.router.url.split('/').length >= 2) {
       title = this.router.url.split('/')[2];
+      if (title == 'sup'){
+        title = "What's up"
+      }
     } else {
       title = '';
     }

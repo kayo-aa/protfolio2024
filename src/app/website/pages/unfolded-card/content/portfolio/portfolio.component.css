@@ -270,7 +270,7 @@ project__right-content {
   }
 
   .main-text p {
-    margin: 32px 18% 242px;
+    margin: 32px 18% 13%;
     line-height: 26px;
   }
 
@@ -346,9 +346,8 @@ project__right-content {
     margin: 0 20px;
     font-size: 44px;
   }
-
   .main-text p {
-    margin: 15px 20px 25%;
+    margin: 15px 20px 13%;
   }
 
   .information .skills-article {

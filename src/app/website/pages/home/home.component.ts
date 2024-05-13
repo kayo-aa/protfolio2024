@@ -54,6 +54,7 @@ export class HomeComponent implements OnInit {
   }
 
   onCardClick(index: number): void {
+    if(this.cards[index].title != 'Clients')
     if (window.innerWidth > 993) {
       this.selectedCardIndex = index;
       this.hide = !this.hide;

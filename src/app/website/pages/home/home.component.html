@@ -26,11 +26,10 @@
   [card]="card"
   [isHovered]="isHoveredArray[i]"
   [selectedCardName]="selectedCardName"
-  [ngStyle]="
-      isHoveredArray[i]
-      ? { 'background-color': card.hoverColor }
-      : { 'background-color': card.color }
-      "
+  [ngStyle]="{
+    'background-color': isHoveredArray[i] ? card.hoverColor : card.color,
+    'cursor': card.title === 'Clients' ? 'auto' : 'pointer'
+  }"
     [@fade]="{ value: cardSelected(i), params: { transformation: transformation } }"
     (@fade.done)="onAnimationDone($event, i)"
   ></app-card-component>
