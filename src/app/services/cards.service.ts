@@ -22,7 +22,7 @@ export class CardsService {
     },
     {
       title: `What's up`,
-      description: 'phrase',
+      description: 'Work sunset, creative dawn',
       image: 'assets/img/sup-main.png',
       color: '#384D48',
       hoverColor: '#2f403c',
@@ -36,10 +36,10 @@ export class CardsService {
     },
     {
       title: 'Clients',
-      description: 'phrase',
+      description: 'Not available yet',
       image: 'assets/img/clients-main.png',
       color: '#3C8F7B',
-      hoverColor: 'rgb(51, 120, 103)',
+      hoverColor: '#b14343',
     },
   ];
   // private cards: Card[] = this.cardConfigurations.map((config) => ({...config})) as Card[];

@@ -1,0 +1,499 @@
+<div class="container">
+  <section class="main-text">
+    <h1>Work sunset, creative dawn.</h1>
+    <p>
+      You've gotten to know the professional me, and maybe even explored some of
+      my projects. If you want to continue getting to know me, here you will
+      read a couple of things that I like to do in my free time.
+    </p>
+  </section>
+
+  <section class="banner">
+    <ul>
+      <li>
+        <h5>Streaming</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>YouTube</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Reading</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Music</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Neo-Soul</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Rap</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Streaming</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>YouTube</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Reading</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Music</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Neo-Soul</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>Rap</h5>
+        <span>•</span>
+      </li>
+      <li>
+        <h5>YouTube</h5>
+        <span>•</span>
+      </li>
+    </ul>
+  </section>
+  <section class="information">
+    <div class="information-container" id="information-sup">
+      <article class="entertainment-article">
+        <div class="entertainment-layout">
+          <div class="entertainment-layout__main-content">
+            <div class="main-content__platform">
+              <div class="platform__img--youtube"></div>
+              <h5 class="platform__h5">YouTube</h5>
+            </div>
+            <h3>What I'm streaming</h3>
+            <p>
+              Whether it's to stay up to date with the world of technology,
+              improve my bass skills or laugh a little: these are the YouTube
+              channels that I recommend the most.
+            </p>
+          </div>
+          <div class="entertainment-layout__secondary-content">
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('midulive')"
+              [ngClass]="{ 'card-hover': infoCards['midulive'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('midulive')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>MiduLive</h4>
+                <p>
+                  Channel with complete live shows and excerpts from MiduDev's
+                  best moments on Twitch. He is a great programmer and tutor!
+                </p>
+                <svg
+                  (click)="redirectTo('https://www.youtube.com/@midulive')"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('davie')"
+              [ngClass]="{ 'card-hover': infoCards['davie'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('davie')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Davie504</h4>
+                <p>
+                  Italian guy who wants to share his passion for slapping the
+                  BASS. He is funny and very talented!
+                </p>
+                <svg
+                  (click)="redirectTo('https://www.youtube.com/@Davie504')"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('gentleman')"
+              [ngClass]="{ 'card-hover': infoCards['gentleman'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('gentleman')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Gentleman Programming</h4>
+                <p>A great tutor who keeps me up to date with Angular.</p>
+                <svg
+                  (click)="
+                    redirectTo('https://www.youtube.com/@GentlemanProgramming')
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('resumo')"
+              [ngClass]="{ 'card-hover': infoCards['resumo'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('resumo')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Te lo resumo</h4>
+                <p>
+                  Here are funny summaries of series and movies. It's always fun
+                  to watch.
+                </p>
+                <svg
+                  (click)="
+                    redirectTo('https://www.youtube.com/@Teloresumoasinomas')
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="entertainment-layout">
+          <div class="entertainment-layout__main-content">
+            <div class="main-content__platform">
+              <div class="platform__img--spotify"></div>
+              <h5 class="platform__h5">Spotify</h5>
+            </div>
+            <h3>What I'm hearing</h3>
+            <p>
+              I love music and browsing new styles. Lately I'm getting into
+              neo-soul and hip-hop. However, my favorite bands are rock! I'll
+              tell you about my favorite styles
+            </p>
+          </div>
+          <div class="entertainment-layout__secondary-content">
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('soul')"
+              [ngClass]="{ 'card-hover': infoCards['soul'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('soul')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Neo-Soul</h4>
+                <p>
+                  Is a musical style analogous to contemporary R&B. Ms.
+                  Lauryn Hill, Mac Ayres, Anderson .Paak and Vinocio are the
+                  best I know.
+                </p>
+                <svg
+                  (click)="
+                    redirectTo(
+                      'https://open.spotify.com/playlist/4BbCjI0tDPplOz03pueAmB?si=d4c52d1416a24906'
+                    )
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('hip-hop')"
+              [ngClass]="{ 'card-hover': infoCards['hip-hop'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('hip-hop')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Hip-Hop</h4>
+                <p>
+                  Musical style in which the lyrics
+                  are more recited than sung. Mac Miller, Kanye West, Little
+                  Simz and Gorillaz are amazing!
+                </p>
+                <svg
+                  (click)="
+                    redirectTo(
+                      'https://open.spotify.com/playlist/5yjvvr196sD2T2UMACRLxX?si=5e0f56037cc34bd0'
+                    )
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('rock')"
+              [ngClass]="{ 'card-hover': infoCards['rock'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('rock')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Rock</h4>
+                <p>
+                  Whether national or international, I always like the frenetic.
+                  Divididos, Arctic Monkeys, Oasis and Cerati always sound good
+                </p>
+                <svg
+                  (click)="
+                    redirectTo(
+                      'https://open.spotify.com/playlist/45oY5ikSMiyBybBLURobgP?si=850faf7a47734208'
+                    )
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('indie')"
+              [ngClass]="{ 'card-hover': infoCards['indie'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('indie')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Funky</h4>
+                <p>
+                  It's always great to dance to a good groove. With Michael
+                  Jackson, Steavie Wonder and Vulfpeck it is possible.
+                </p>
+                <svg
+                  (click)="
+                    redirectTo(
+                      'https://open.spotify.com/intl-es/album/2ZytN2cY4Zjrr9ukb2rqTP?si=3dqQv_EUSBS_Y0OfOAsnAQ'
+                    )
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="entertainment-layout">
+          <div class="entertainment-layout__main-content">
+            <div class="main-content__platform">
+              <div class="platform__img--book"></div>
+              <h5 class="platform__h5">Books</h5>
+            </div>
+            <h3>What I'm reading</h3>
+            <p>
+              I like to entertain myself by reading manga and novels. I like the police genre!
+            </p>
+          </div>
+          <div class="entertainment-layout__secondary-content">
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('poe')"
+              [ngClass]="{ 'card-hover': infoCards['poe'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('poe')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Narraciones Extraordinarias</h4>
+                <p>
+                  It features the well-known short stories of the writer Edgar Allan Poe. I like "corazón delator"!
+                </p>
+                <svg
+                  (click)="redirectTo('https://books.google.com.ar/books/about/Narraciones_extraordinarias.html?id=T2-0EAAAQBAJ&source=kp_book_description&redir_esc=y')"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('punpun')"
+              [ngClass]="{ 'card-hover': infoCards['punpun'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('punpun')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Oyasumi Punpun</h4>
+                <p>
+                  It tells the life of Punpun from child to adult, growing up with all the problems a person can have. Kind of sad but with a beautiful drawing.
+                </p>
+                <svg
+                  (click)="redirectTo('https://www.google.com.ar/search?sca_esv=4771c1dce5b9df5f&hl=es&sxsrf=ADLYWIINzvdMCgizWmUROyVSt8WSbR2_uw:1715624565589&q=oyasumi+punpun+ivrea&tbm=shop&source=lnms&prmd=isvnmbtz&ved=1t:200715&ictx=111&biw=1536&bih=776&dpr=1.25')"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('percy')"
+              [ngClass]="{ 'card-hover': infoCards['percy'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('percy')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Percy Jackson</h4>
+                <p>The play is set in the United States in the current era but is based on a notable event in Greek mythology.</p>
+                <svg
+                  (click)="
+                    redirectTo('https://www.google.com.ar/search?sca_esv=4771c1dce5b9df5f&hl=es&sxsrf=ADLYWIJZz0yz8Q0bFjLIo1uWcgaRbe_P0g:1715624900968&q=percy+jackson&tbm=shop&source=lnms&prmd=isvnbmtz&ved=1t:200715&ictx=111&biw=1536&bih=776&dpr=1.25')
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="secondary-content__card"
+              (mouseleave)="toggleHoverState('ito')"
+              [ngClass]="{ 'card-hover': infoCards['ito'] }"
+            >
+              <div
+                class="hover-activator"
+                (mouseenter)="toggleHoverState('ito')"
+                [ngStyle]="{ display: hoverFlag ? 'none' : 'inline' }"
+              ></div>
+              <div class="card__content">
+                <h4>Uzumaki</h4>
+                <p>
+                  Horror manga where a small town is the victim of a curse that involves a plague of spirals that progressively affects all its inhabitants.
+                </p>
+                <svg
+                  (click)="
+                    redirectTo('https://www.google.com.ar/search?q=uzumaki+junji+ito&sca_esv=4771c1dce5b9df5f&hl=es&biw=1536&bih=776&tbm=shop&sxsrf=ADLYWIKA8tu_47LT4vHNpu6cP7qgTXO1Pw%3A1715625063482&ei=Z1xCZobXHLPr1AGZl6noDQ&oq=uzumaki+ju&gs_lp=Egtwcm9kdWN0cy1jYyIKdXp1bWFraSBqdSoCCAAyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5IxBtQzAhYixRwAngAkAEAmAFcoAHIBqoBAjExuAEDyAEA-AEBmAINoAL0BsICBBAjGCfCAgoQABiABBhDGIoFmAMAiAYBkgcCMTOgB_s1&sclient=products-cc')
+                  "
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="38"
+                  height="38"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 135.1c-4.2-4.5-10.1-7.1-16.3-7.1C266 128 256 138 256 150.3V208H160c-17.7 0-32 14.3-32 32v32c0 17.7 14.3 32 32 32h96v57.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.3-7.1l99.9-107.1c3.5-3.8 5.5-8.7 5.5-13.8s-2-10.1-5.5-13.8L294.6 135.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div
+      class="table"
+      [ngStyle]="{ 'grid-template-rows': informationElementHeight }"
+    >
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
+  </section>
+</div>
